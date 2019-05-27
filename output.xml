@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20190525 15:09:33.470" generator="Robot 3.1.1 (Python 2.7.15 on win32)">
+<suite source="F:\MEGAsync\robotFW\demoAndroidSeting" id="s1" name="demoAndroidSeting">
+<suite source="F:\MEGAsync\robotFW\demoAndroidSeting\test" id="s1-s1" name="Test">
+<suite source="F:\MEGAsync\robotFW\demoAndroidSeting\test\test_settings.robot" id="s1-s1-s1" name="Test Settings">
+<test id="s1-s1-s1-t1" name="tc1">
+<kw name="open setting" library="settings">
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<arguments>
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>platformName=Android</arg>
+<arg>platformVersion=8.1.0</arg>
+<arg>deviceName=AAB00007852</arg>
+<arg>appPackage=com.android.settings</arg>
+<arg>appActivity=com.android.settings.Settings</arg>
+<arg>automationName=UiAutomator2</arg>
+</arguments>
+<status status="PASS" endtime="20190525 15:09:46.547" starttime="20190525 15:09:33.875"></status>
+</kw>
+<kw name="Page Should Contain Text" library="AppiumLibrary">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Mạng và Internet</arg>
+</arguments>
+<msg timestamp="20190525 15:09:47.844" level="INFO">Current page contains text 'Mạng và Internet'.</msg>
+<status status="PASS" endtime="20190525 15:09:47.844" starttime="20190525 15:09:46.547"></status>
+</kw>
+<status status="PASS" endtime="20190525 15:09:47.844" starttime="20190525 15:09:33.875"></status>
+</kw>
+<kw name="Press Keycode" library="AppiumLibrary">
+<doc>Sends a press of keycode to the device.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<status status="PASS" endtime="20190525 15:09:47.907" starttime="20190525 15:09:47.844"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20190525 15:09:50.922" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20190525 15:09:50.922" starttime="20190525 15:09:47.907"></status>
+</kw>
+<kw name="scroll righ to left" library="settings">
+<kw name="Swipe By Percent" library="AppiumLibrary">
+<doc>Swipe from one percent of the screen to another percent, for an optional duration. 
+Normal swipe fails to scale for different screen resolutions, this can be avoided using percent.</doc>
+<arguments>
+<arg>90</arg>
+<arg>50</arg>
+<arg>10</arg>
+<arg>50</arg>
+</arguments>
+<status status="PASS" endtime="20190525 15:09:52.250" starttime="20190525 15:09:50.922"></status>
+</kw>
+<status status="PASS" endtime="20190525 15:09:52.250" starttime="20190525 15:09:50.922"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20190525 15:09:55.250" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20190525 15:09:55.250" starttime="20190525 15:09:52.250"></status>
+</kw>
+<kw name="Swipe By Percent" library="AppiumLibrary">
+<doc>Swipe from one percent of the screen to another percent, for an optional duration. 
+Normal swipe fails to scale for different screen resolutions, this can be avoided using percent.</doc>
+<arguments>
+<arg>90</arg>
+<arg>50</arg>
+<arg>10</arg>
+<arg>50</arg>
+</arguments>
+<status status="PASS" endtime="20190525 15:09:56.547" starttime="20190525 15:09:55.250"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20190525 15:09:59.547" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20190525 15:09:59.547" starttime="20190525 15:09:56.547"></status>
+</kw>
+<kw name="Swipe By Percent" library="AppiumLibrary">
+<doc>Swipe from one percent of the screen to another percent, for an optional duration. 
+Normal swipe fails to scale for different screen resolutions, this can be avoided using percent.</doc>
+<arguments>
+<arg>10</arg>
+<arg>50</arg>
+<arg>90</arg>
+<arg>50</arg>
+</arguments>
+<status status="PASS" endtime="20190525 15:10:00.859" starttime="20190525 15:09:59.547"></status>
+</kw>
+<kw name="wait and click element" library="common">
+<arguments>
+<arg>//*[@text="Danh bạ"]</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" endtime="20190525 15:10:01.422" starttime="20190525 15:10:00.859"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20190525 15:10:01.437" level="INFO">Clicking element '//*[@text="Danh bạ"]'.</msg>
+<status status="PASS" endtime="20190525 15:10:01.719" starttime="20190525 15:10:01.437"></status>
+</kw>
+<status status="PASS" endtime="20190525 15:10:01.719" starttime="20190525 15:10:00.859"></status>
+</kw>
+<status status="PASS" endtime="20190525 15:10:01.734" critical="yes" starttime="20190525 15:09:33.873"></status>
+</test>
+<status status="PASS" endtime="20190525 15:10:01.736" starttime="20190525 15:09:33.611"></status>
+</suite>
+<status status="PASS" endtime="20190525 15:10:01.737" starttime="20190525 15:09:33.595"></status>
+</suite>
+<status status="PASS" endtime="20190525 15:10:01.737" starttime="20190525 15:09:33.564"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="demoAndroidSeting" pass="1">demoAndroidSeting</stat>
+<stat fail="0" id="s1-s1" name="Test" pass="1">demoAndroidSeting.Test</stat>
+<stat fail="0" id="s1-s1-s1" name="Test Settings" pass="1">demoAndroidSeting.Test.Test Settings</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
